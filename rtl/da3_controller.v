@@ -183,7 +183,8 @@ module pmod_da3_controller #(
                             busy        <= 1'b0;
                             sample_done <= 1'b1;
 
-                        end else begin
+                        end
+                        else begin
 
                             bit_index <= bit_index - 1'b1;
 
@@ -194,7 +195,8 @@ module pmod_da3_controller #(
 
                     end
 
-                end else begin
+                end 
+                else begin
 
                     clk_count <= clk_count + 1'b1;
 
